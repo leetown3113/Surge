@@ -22,6 +22,6 @@ DOMAIN-SUFFIX,ugdtimg.com,REJECT
 DOMAIN-SUFFIX,doubleclick.net,REJECT
 DOMAIN-SUFFIX,gvt1.com,REJECT
 [Script]
-爱阅跳广告直接领取 = type=http-response,script-path=https://raw.githubusercontent.com/litao3113/Freedom/main/Script/aiyue.js,pattern=^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads.+,max-size=0,requires-body=true,timeout=10,script-update-interval=0,enable=true
+爱阅跳广告直接领取 = type=http-response,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/aiyue.js,pattern=^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads.+,max-size=0,requires-body=true,timeout=10,script-update-interval=0,enable=true
 [MITM]
 hostname = %APPEND%,api-access.pangolin-sdk-toutiao.com
