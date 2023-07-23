@@ -1,0 +1,7 @@
+
+
+[Script]
+Wallpaper = type=http-response,pattern=^https?:\/\/billing-ios\.wallpaperscraft\.com\/verify_receipt\/remove_ads$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_Wallpaperscraft.js
+
+[MITM]
+hostname= %APPEND% *.wallpaperscraft.com
