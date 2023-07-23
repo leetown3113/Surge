@@ -1,0 +1,16 @@
+#!name=AliCloud
+#!desc=阿里云部分破解
+
+
+
+[Script]
+alicloud = type=http-response,pattern=^https?:\/\/api\.aliyundrive\.com\/apps\/v\d\/users\/(apps|home)\/widgets$,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://api.aliyundrive.com/business/v1/users/me/vip/info,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://member.aliyundrive.com/v1/users/tools,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://member.aliyundrive.com/v1/users/me,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://api.aliyundrive.com/business/v1.0/users/vip/info,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://api.aliyundrive.com/v2/databox/get_personal_info,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+alicloud = type=http-response,pattern=https://api.aliyundrive.com/business/v1.0/users/feature/list,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/ddgksf2013/f4752e632fd3375ea2811985c5b635dc/raw/alicloud.js
+
+[MITM]
+hostname= %APPEND% api.aliyundrive.com, member.aliyundrive.com
