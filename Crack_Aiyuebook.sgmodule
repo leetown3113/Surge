@@ -1,5 +1,5 @@
-#!name=爱阅跳广告
-#!desc=Github自用
+#!name=Github-爱阅跳广告
+#!desc=解锁-跳过广告
 [Rule]
 DOMAIN,api-access.pangolin-sdk-toutiao.com,DIRECT
 DOMAIN,open.e.kuaishou.com,REJECT
