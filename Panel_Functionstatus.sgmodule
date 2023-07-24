@@ -1,0 +1,10 @@
+#!name=系统状态
+#!desc=启动时间及主要功能状态
+
+[Panel]
+Functionstatus = script-name=Functionstatus, title="Surge", content="请刷新", update-interval=60
+
+
+
+[Script]
+Functionstatus = type=generic, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Surge_Functionstatus.js
