@@ -1,5 +1,5 @@
 #!name=爱阅跳广告
-#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2023.03.08)"
+#!desc="Github自用"
 [Rule]
 DOMAIN,api-access.pangolin-sdk-toutiao.com,DIRECT
 DOMAIN,open.e.kuaishou.com,REJECT
