@@ -1,5 +1,5 @@
-#!name=Github-系统状态
-#!desc=面板-启动时间及主要功能状态
+#!name=自建-面板-系统状态
+#!desc=启动时间及主要功能状态
 
 [Panel]
 Functionstatus = script-name=Functionstatus, title="Surge", content="请刷新", update-interval=60
