@@ -1,0 +1,9 @@
+#!name=自建-解锁-Spotify
+#!desc=部分解锁premium音质不能设置为超高
+
+[MITM]
+hostname = %APPEND% spclient.wg.spotify.com
+
+[Script]
+spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_Spotify_json.js
+spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_Spotify_proto.js,script-update-interval=0
