@@ -1,0 +1,11 @@
+#!name=自建-解锁-TestFlight
+#!desc=TestFlight区域限制解除
+
+[General]
+skip-proxy = %APPEND% iosapps.itunes.apple.com
+
+[Script]
+TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,script-update-interval=-1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_TestFlight.js
+
+[MITM]
+hostname = %APPEND% testflight.apple.com
