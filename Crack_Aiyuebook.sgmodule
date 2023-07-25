@@ -1,5 +1,5 @@
-#!name=自用-解锁-爱阅跳广告
-#!desc=爱阅书香跳过广告解锁全功能
+#!name=自用-解锁-爱阅书香
+#!desc=跳过广告并开启会员功能
 [Rule]
 DOMAIN,api-access.pangolin-sdk-toutiao.com,DIRECT
 DOMAIN,open.e.kuaishou.com,REJECT
