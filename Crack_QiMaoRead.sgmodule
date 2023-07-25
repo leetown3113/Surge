@@ -1,0 +1,8 @@
+#!name=自建-解锁-七猫小说
+#!desc=七猫小说vip去广告
+
+[MITM]
+hostname = %APPEND% *.wtzw.com
+
+[Script]
+七猫小说=type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_QiMaoRead.js
