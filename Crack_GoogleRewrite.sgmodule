@@ -1,0 +1,9 @@
+#!name=自用-解锁-Google Rewrite
+#!desc=Safari谷歌搜索重定向
+
+[URL Rewrite]
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% www.google.cn, www.g.cn
