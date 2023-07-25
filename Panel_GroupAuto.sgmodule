@@ -1,5 +1,5 @@
-#!name=自用-面板-优选节点
-#!desc=自动选取最优节点
+#!name=自用【面板】优选节点
+#!desc=自动选择最优节点
 
 [Panel]
 GroupAuto = script-name=GroupAuto1,update-interval=6
