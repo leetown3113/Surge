@@ -1,7 +1,7 @@
 #!name=自用【解锁】酷我音乐
 #!desc=去除广告开启VIP开启无损下载
 [MITM]
-hostname = *.kuwo.cn, *.lrts.me
+hostname = %APPEND% *.kuwo.cn, *.lrts.me
 
 
 # > 酷我音乐_通用广告请求
