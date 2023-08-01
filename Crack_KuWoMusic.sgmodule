@@ -1,64 +1,10 @@
 #!name=自用【解锁】酷我音乐
 #!desc=去除广告解锁VIP
 
+
+
 [Script]
-
-# > 酷我音乐_搜索框处理
-kuwomusic_28 = type=http-response, pattern=https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_去除首页轮播广告和tips
-kuwomusic_30 = type=http-response, pattern=https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_去除会员页广告
-kuwomusic_32 = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_去除会员页顶部广告tab
-kuwomusic_34 = type=http-response, pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_数字专辑
-kuwomusic_38 = type=http-response, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_听书权限接口1
-kuwomusic_40 = type=http-response, pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/a\.p, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_听书权限接口2
-kuwomusic_42 = type=http-response, pattern=^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_新版vip接口1
-kuwomusic_44 = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui,requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_新版vip接口2
-kuwomusic_46 = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_旧版vip接口
-kuwomusic_48 = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip($|\?op=ui), requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_皮肤解锁
-kuwomusic_50 = type=http-response, pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-# > 酷我音乐_无损下载[限纯净版]
-kuwomusic_52 = type=http-request, pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
-
-[Map Local]
-
-# > 酷我音乐_通用广告请求
-https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-200.txt"
-
-# > 酷我音乐_屏蔽热词
-https?:\/\/hotword\.kuwo\.cn\/hotword\.s data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-dict.json"
-
-# > 酷我音乐_通用广告请求
-https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-dict.json"
-
-# > 酷我音乐_通用广告请求
-https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-200.txt"
-
-# > 酷我音乐_应用内弹窗及右下角
-^https?:\/\/mobilead\.kuwo\.cn\/ data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-200.txt"
-
-# > 酷我音乐_开屏广告
-https?:\/\/rich\.kuwo\.cn\/AdService data="https://raw.githubusercontent.com/leetown3113/JavaScript/main/reject-200.txt"
+kw = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
 
 [MITM]
-
-hostname = %APPEND% *.kuwo.cn,*.lrts.me
+hostname= %APPEND% *.kuwo.cn, *.lrts.me
