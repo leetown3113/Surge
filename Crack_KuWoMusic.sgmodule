@@ -17,28 +17,29 @@ https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert url reject-200
 # > 酷我音乐_开屏广告
 https?:\/\/rich\.kuwo\.cn\/AdService url reject-200
 
-# > 酷我音乐_搜索框处理
+
 [Script]
-KuWoMusic=type=http-response,pattern=https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+# > 酷我音乐_搜索框处理
+KuWoMusic=type=http-response,pattern=https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_去除首页轮播广告和tips
-KuWoMusic=type=http-response,pattern=https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_去除会员页广告
-KuWoMusic=type=http-response,pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_去除会员页顶部广告tab
-KuWoMusic=type=http-response,pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_数字专辑
-KuWoMusic=type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?newver,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_听书权限接口1
-KuWoMusic=type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/a\.p url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/a\.p,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_听书权限接口2
-KuWoMusic=type=http-response,pattern=^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/.*\.kuwo\.cn\/v2\/api\/pay\/vip\/extraVipStatus,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_新版vip接口1
-KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/enc\/user\/vip\?op=ui,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_新版vip接口2
-KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/userbase\/vip\?op=get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_旧版vip接口
-KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip($|\?op=ui) url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/user\/vip($|\?op=ui),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_皮肤解锁
-KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme url script-response-body https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/vip\/v2\/theme,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 # > 酷我音乐_无损下载[限纯净版]
-KuWoMusic=type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui url script-request-header https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
+KuWoMusic=type=http-response,pattern=^https?:\/\/musicpay\.kuwo\.cn\/music\.pay\?ui,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
