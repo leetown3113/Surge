@@ -1,10 +1,8 @@
 #!name=自用【解锁】酷我音乐
 #!desc=去除广告解锁VIP
 
-
-
 [Script]
-kw = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js
+kw = type=http-response,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_KuWoMusic.js
 
 [MITM]
 hostname= %APPEND% *.kuwo.cn, *.lrts.me
