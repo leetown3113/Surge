@@ -1,6 +1,6 @@
 #!name=自用【面板】电信流量
 #!desc=流量使用情况及话费信息
 [Script]
-Telecom_Panel= type=generic,timeout=10,script-path= https://github.com/ChinaTelecomOperators/ChinaTelecom/releases/download/Prerelease-Alpha/Tele_Cellular_Panel.js,argument=icon=list.bullet.rectangle&color=#cd4639
+Telecom_Panel= type=generic,timeout=10,script-path= https://raw.githubusercontent.com/leetown3113/JavaScript/main/Tele_Cellular_Panel.js,argument=icon=list.bullet.rectangle&color=#cd4639
 [Panel]
 Telecom_Panel= script-name=Telecom_Panel, title="电信流量面板", content="请刷新",,update-interval=3600
