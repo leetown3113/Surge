@@ -5,6 +5,8 @@
 DOMAIN,p6-ad-sign.byteimg.com,REJECT
 DOMAIN,p9-ad-sign.byteimg.com,REJECT
 # DOMAIN-SUFFIX,byteimg.com,DIRECT
+DOMAIN,i.snssdk.com,REJECT
+DOMAIN,i-lq.snssdk.com,REJECT
 DOMAIN,dig.bdurl.net,REJECT
 DOMAIN-KEYWORD,zijieapi,REJECT
 # DOMAIN,ads3-normal-lq.zijieapi.com,REJECT
@@ -12,6 +14,11 @@ DOMAIN-KEYWORD,zijieapi,REJECT
 # DOMAIN,polaris3-normal-lq.zijieapi.com,REJECT
 DOMAIN,activity-ag.awemeughun.com,REJECT
 
+DOMAIN,mcs.snssdk.com,REJECT
+DOMAIN,tnc3-alisc1.snssdk.com,REJECT
+DOMAIN,security-lq.snssdk.com,REJECT
+DOMAIN,tnc3-aliec2.snssdk.com,REJECT
+DOMAIN,is.snssdk.com,REJECT
 
 DOMAIN,msync-im1-vip6-std.easemob.com,REJECT
 
@@ -63,4 +70,4 @@ URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image,REJECT
 ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/ - reject
 
 [MITM]
-hostname = %APPEND% *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,*default.ixigua.com
+hostname = %APPEND% *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com
