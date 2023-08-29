@@ -7,9 +7,9 @@
 wanyuanyuedu = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_WanyuanRead.js
 # Pillow睡眠
 Pillow = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_Pillow.js
-
-
+# Documents文件管理器
+Documents = type=http-request,pattern=^https:\/\/license\.pdfexpert\.com\/api\/2\.0\/documents\/subscription\/refresh,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/main/Crack_Documents.js
 
 
 [MITM]
-hostname= %APPEND% buy.itunes.apple.com, api.revenuecat.com
+hostname= %APPEND% buy.itunes.apple.com, api.revenuecat.com, license.pdfexpert.com
