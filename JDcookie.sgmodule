@@ -4,7 +4,7 @@
 [Script]
 
 #cookie获取通知·优化通知+api服务器
-🍎a-JD_pt_key = type=http-request, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://cf-row.newbingzzroy.workers.dev/https://raw.githubusercontent.com/cunzhiceyuan/ios-QX-re/refs/heads/main/surge/JD/JDcookie.js
+🍎a-JD_pt_key = type=http-request, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/leetown3113/JavaScript/refs/heads/main/JDcookie.js
 
 [MITM]
 
